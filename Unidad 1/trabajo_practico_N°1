@@ -1,0 +1,101 @@
+# Ejercico 1 
+# la siguiente linea imprime en pantalla el mensaje "hola mundo".
+print("hola mundo")
+
+# Ejercicio 2
+
+# pedimos al usuario que ingrese su nombre y lo almacenamos en la variable "nombre".
+nombre = input("Ingrese su nombre: ")
+
+# Imprimimos el saludo.
+print(f"Hola mi nombre es {nombre}")
+
+# Ejercicio 3
+# Pedimos al usuario que ingrese su nombre y almacenamos en la variable "nombre"
+nombre = input("Ingrese su nombre:  ")
+# Pedimos al usuario que ingrese su apellido y lo almacenamos en la variable "apellido"
+apellido = input("Ingrese su apellido: ")
+# Pedimos al usuario que ingrese su edad y lo almacenamos en la variable "edad"
+edad = int(input("Ingrese su edad: "))
+# Pedimos al usuario que ingrese su pais de residencia y almacenamos en la variable "paisDeResidencia"
+paisDeResidecncia = input("Ingrese su pais de residencia: ")
+# Imprimimos el mensaje en pantalla.
+print(f"Hola soy {nombre} {apellido}, tengo {edad} años y soy de {paisDeResidecncia}")
+
+# Ejercicio 4 
+# Primero importamos la constante pi de la libreria math
+from math import pi
+# Pedimos al usuario que ingrese el radio del circulo y almacenamos en la variable radio.
+radio = float(input("Ingrese el radio del circulo: "))
+# Realizamos el calculo del area del circulo y lo almacenamos en la variable "area".
+area = pi * radio ** 2
+#Realizamos el calculo del perimetro del circulo y lo almacenamos en la varable "perimetro".
+perimetro = 2 * pi * radio
+# Imprimimos en pantalla ambos resultados.
+print(f"El area del circulo es {area}, y el perimetro es {perimetro}")
+
+# Ejercicio 5
+# Pedimos al usuario que ingrese la cantidad de segundos y almacenamos en la variable "segundos"
+segundos = int(input("Ingrese la cantidad de segundos: "))
+# Realizamos el calculo y lo almacenamos en la variable "horas"
+horas = segundos / 3600
+# Imprimimos el mensaje en pantalla
+print(f"La cantidad de horas segun los segundos ingresados son : {horas}")
+
+# Ejercicio 6
+# Solicitamos al usuario que ingrse un numero y lo almacenamos en la variable "numero"
+numero = int(input("Ingrese un numero: "))
+# realizamos las multiplicaciones y mostramos en pantalla.
+print(f"{numero} x 1 = ", numero * 1)
+print(f"{numero} x 2 = ", numero * 2)
+print(f"{numero} x 3 = ", numero * 3)
+print(f"{numero} x 4 = ", numero * 4)
+print(f"{numero} x 5 = ", numero * 5)
+print(f"{numero} x 6 = ", numero * 6)
+print(f"{numero} x 7 = ", numero * 7)
+print(f"{numero} x 8 = ", numero * 8)
+print(f"{numero} x 9 = ", numero * 9)
+print(f"{numero} x 10 = ", numero * 10)
+
+# Ejercicio 7 
+# Solicitamos al usuario que ingrese dos numeros y los almacenamos en las variables "num1" y "num2".
+num1 = float(input("Ingrese el primer numero distinto de 0: "))
+num2 = float(input("Ingrese el segundo numero distinto de 0: "))
+# Realizamos las operaciones matematicas.
+suma = num1 + num2
+resta = num1 - num2
+division = num1 / num2 
+multiplicacion = num1 * num2 
+# Imprimimos los resultados en pantalla.
+print(f"""
+#       El resultado de la suma es {suma}
+        El resultado de la resta es {resta}
+        El resultado de la division es {division}
+        El resultado de la multiplicacion es {multiplicacion} """)
+
+# Ejercicio 8 
+# Solicitamos al usuario que ingrese la altura y peso y almacenamos en las variables "altura" y "peso".
+altura = float(input("Ingrese su altura: "))
+peso = float(input("Ingrese su peso: "))
+# Realizamos el calculo imc y lo almacenamos en la variable "imc", redondeamos a 2 decimales.
+imc = round(peso / altura ** 2, 2)
+# Imprimimos en pantalla el resultado.
+print(f"Su indice de masa corporal es : {imc}")
+
+# Ejercicio 9 
+# Solicitamos al usuario que ingrese la temperatura en grados celcius y almacenamos en la variable "gradosCelcius".
+gradosCelcius = float(input("Ingrese la temperaturs en grados celcius: "))
+# Realizamos la conversion a grados fahrenheit y almacenams en la variable "gradosfahrenheit".
+gradosFahrenheit = round((9/5)* gradosCelcius + 32, 2)
+# Moatramos el resultado en pantalla.
+print(f"{gradosCelcius} grados celcius equivalen a {gradosFahrenheit} grados fahrenheit")
+
+# Ejercicio 10 
+# Solicitamos al usuario que ingrese 3 numeros para sacar el porcentaje y los almacenamos en las variables "num1", "num2" y "num3".
+num1 = float(input("Ingrese el primer numero: "))
+num2 = float(input("Ingrese el segundo numero: "))
+num3 = float(input("Ingrese el tercer numero: "))
+# Realizamos la operacion matematica y el resultado lo almacenamos en la variable "promedio"
+promedio = (num1 + num2 + num3) / 3
+# Imprimimos el reslutado en pantalla.
+print(f"El promedio es {promedio}")
